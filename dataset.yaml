@@ -1,0 +1,13 @@
+path: ./
+train: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\train'
+val: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\valid'
+test: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\test'
+nc: 3
+names: ['arma', 'sem risco', 'pessoa armada']
+
+roboflow:
+  workspace: aprs
+  project: armed-person-recognition
+  version: 13
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/aprs/armed-person-recognition/dataset/13
