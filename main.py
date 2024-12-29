@@ -12,7 +12,7 @@ model.train(
     epochs=5,             
     imgsz=640,            # tamanho das imagens
     batch=16,             
-    conf=0.25             # confiança mínima
+    conf=0.7             # confiança mínima
 )
 results = model.val()
 

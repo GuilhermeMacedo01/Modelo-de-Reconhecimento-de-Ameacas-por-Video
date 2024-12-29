@@ -1,7 +1,7 @@
 path: ./
-train: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\train'
-val: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\valid'
-test: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Video\dataset\test'
+train: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Ameacas-por-Video\dataset\train'
+val: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Ameacas-por-Video\dataset\valid'
+test: 'C:\Users\guilh\OneDrive\Área de Trabalho\Armed-Person-Recognition\Modelo-de-Reconhecimento-de-Ameacas-por-Video\dataset\test'
 nc: 3
 names: ['arma', 'sem risco', 'pessoa armada']
 
