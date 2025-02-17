@@ -1,10 +1,2 @@
 ultralytics
 numpy
-
-# Define paths
-train_images_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/train/images'
-train_labels_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/train/labels'
-val_images_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/valid/images'
-val_labels_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/valid/labels'
-test_images_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/test/images'
-test_labels_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/Armed Person Recognition.v13-satexphue.yolov8/test/labels'

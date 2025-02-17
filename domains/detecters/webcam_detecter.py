@@ -1,9 +1,13 @@
+from pathlib import Path
 import cv2
 from ultralytics import YOLO
 
 cap = cv2.VideoCapture(0)
 
-model = YOLO("C:/Users/guilh/OneDrive/Área de Trabalho/Armed-Person-Recognition/Modelo-de-Reconhecimento-de-Ameacas-por-Video/runs/detect/train12/weights/best.pt")
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "runs" / "detect" / "train12" / "weights" / "best.pt"
+
+model = YOLO("/Users/guilherme.macedo/ArmedPeopleDetecter/Modelo-de-Reconhecimento-de-Ameacas-por-Video/runs/detect/train12/weights/best.pt")
 
 while True:
     success, img = cap.read()
