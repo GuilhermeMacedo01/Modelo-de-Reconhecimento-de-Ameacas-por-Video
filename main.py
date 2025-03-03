@@ -1,16 +1,12 @@
 import importlib
 
 def escolher_detect():
-    print("Escolha um detector:")
-    print("1 - Detectar imagens")
-    print("2 - Detectar camera")
-    print("3 - Detectar Screenshot")
+    print("Quando estiver pronto, pressione:")
+    print("1 - Detectar camera")
     escolha = input("Digite o número do detector: ")
 
     detectores = {
-        "1": "domains.detecters.image_detecter",
-        "2": "domains.detecters.webcam_detecter",
-        "3": "domains.detecters.screenshot_detecter"
+        "1": "domains.detecters.webcam_detecter",
     }
 
     if escolha in detectores:
