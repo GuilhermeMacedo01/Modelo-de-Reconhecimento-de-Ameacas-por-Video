@@ -41,7 +41,7 @@ while True:
                 label = result.names[class_id]
                 confidence = detection.conf 
                 
-                if label == 'sem risco' and confidence > 0.6 and bateu==0:
+                if label == 'pessoa armada' and confidence > 0.6 and bateu==0:
                     bateu=1
                     send_email_with_image(img) 
                     print("Arma detectada. E-mail enviado.")
