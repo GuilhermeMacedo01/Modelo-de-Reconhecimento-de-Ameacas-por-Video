@@ -23,45 +23,45 @@ def send_email_with_image(image):
     <html>
     <head>
         <style>
-            body {
+            body {{
                 font-family: Arial, sans-serif;
                 line-height: 1.6;
                 color: #333333;
-            }
-            .container {
+            }}
+            .container {{
                 max-width: 600px;
                 margin: 0 auto;
                 padding: 20px;
                 background-color: #f8f8f8;
                 border-radius: 5px;
-            }
-            .header {
+            }}
+            .header {{
                 background-color: #ff4444;
                 color: white;
                 padding: 15px;
                 text-align: center;
                 border-radius: 5px 5px 0 0;
                 margin-bottom: 20px;
-            }
-            .content {
+            }}
+            .content {{
                 background-color: white;
                 padding: 20px;
                 border-radius: 5px;
                 margin-bottom: 20px;
-            }
-            .footer {
+            }}
+            .footer {{
                 text-align: center;
                 font-size: 12px;
                 color: #666666;
-            }
-            .alert-icon {
+            }}
+            .alert-icon {{
                 font-size: 24px;
                 margin-bottom: 10px;
-            }
-            .timestamp {
+            }}
+            .timestamp {{
                 color: #666666;
                 font-size: 14px;
-            }
+            }}
         </style>
     </head>
     <body>
