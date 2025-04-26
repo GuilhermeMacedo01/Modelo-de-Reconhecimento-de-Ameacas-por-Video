@@ -8,11 +8,33 @@ data_yaml_path = '/Users/guilherme.macedo/ArmedPeopleDetecter/dataset.yaml'
 
 # Treinamento do modelo
 model.train(
-    data=data_yaml_path,  # referência ao arquivo YAML
-    epochs=5,             
-    imgsz=640,            # tamanho das imagens
-    batch=16,             
-    conf=0.7             # confiança mínima
+    data=data_yaml_path,      # referência ao arquivo YAML
+    epochs=200,               # mais épocas para garantir convergência completa
+    imgsz=640,                # tamanho das imagens (mantido pois é ideal para detecção)
+    batch=16,                 # batch size reduzido para melhor estabilidade com 3 classes
+    conf=0.3,                 # confiança inicial ajustada para o caso de uso
+    iou=0.5,                  # IoU threshold mais conservador para detecção precisa
+    patience=30,              # early stopping mais agressivo
+    save=True,               
+    device='0',               # usar GPU se disponível
+    workers=4,                # workers reduzidos para evitar problemas de memória
+    project='runs/train',     
+    name='armed_detection',   
+    exist_ok=True,           
+    pretrained=True,          
+    optimizer='SGD',          # SGD com momentum para melhor generalização
+    lr0=0.01,                 # taxa de aprendizado inicial
+    lrf=0.01,                 # taxa de aprendizado final
+    momentum=0.937,           # momentum para SGD
+    weight_decay=0.0005,      # regularização L2
+    warmup_epochs=3,          # warmup para estabilidade inicial
+    warmup_momentum=0.8,      # momentum durante warmup
+    warmup_bias_lr=0.1,       # taxa de aprendizado do bias durante warmup
+    box=7.5,                  # peso da loss de bounding box
+    cls=0.5,                  # peso da loss de classificação
+    dfl=1.5,                  # peso da loss de distribuição
+    verbose=True,             # mostrar progresso detalhado
+    seed=42                   # seed para reprodutibilidade
 )
 results = model.val()
 
