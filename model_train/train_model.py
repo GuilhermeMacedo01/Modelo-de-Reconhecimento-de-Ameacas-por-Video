@@ -6,8 +6,8 @@ from pathlib import Path
 
 # Configurações
 MODEL_PATH = 'yolov8n.pt'
-DATA_YAML_PATH = '/Users/guilherme.macedo/ArmedPeopleDetecter/dataset.yaml'
-TEST_IMAGES_PATH = '/Users/guilherme.macedo/ArmedPeopleDetecter/Rapid dataset/test/images'
+DATA_YAML_PATH = 'C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Armed-Person-Recognition\\Modelo-de-Reconhecimento-de-Ameacas-por-Video\\dataset.yaml'
+TEST_IMAGES_PATH = 'C:\\Users\\guilh\\OneDrive\\Área de Trabalho\\Armed-Person-Recognition\\Modelo-de-Reconhecimento-de-Ameacas-por-Video\\dataset\\test\\images'
 OUTPUT_DIR = 'output'
 
 # Cores para diferentes classes
@@ -27,14 +27,13 @@ def train_model():
     
     model.train(
         data=DATA_YAML_PATH,
-        epochs=200,
+        epochs=80,
         imgsz=640,
         batch=16,
-        conf=0.3,
+        conf=0.5,
         iou=0.5,
-        patience=30,
+        patience=15,
         save=True,
-        device='0',
         workers=4,
         project='runs/train',
         name='armed_detection',
@@ -45,7 +44,7 @@ def train_model():
         lrf=0.01,
         momentum=0.937,
         weight_decay=0.0005,
-        warmup_epochs=3,
+        warmup_epochs=2,
         warmup_momentum=0.8,
         warmup_bias_lr=0.1,
         box=7.5,
@@ -55,7 +54,8 @@ def train_model():
         mosaic=1.0,
         mixup=0.5,
         verbose=True,
-        seed=42
+        seed=42,
+        device='cpu'
     )
     
     return model
