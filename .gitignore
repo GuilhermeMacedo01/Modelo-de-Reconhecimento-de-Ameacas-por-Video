@@ -4,7 +4,6 @@ output/
 venv/
 dataset
 Rapid dataset
-runs
 __pycache__
 
 
