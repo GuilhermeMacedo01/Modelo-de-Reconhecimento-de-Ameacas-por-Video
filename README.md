@@ -6,25 +6,17 @@ Este projeto implementa um sistema de detecção de ameaças em tempo real utili
 
 - Python 3.8 ou superior
 - Webcam funcional
-- Conexão com internet (para primeira execução, para download do modelo)
 
 ## 🔧 Instalação
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/Modelo-de-Reconhecimento-de-Ameacas-por-Video.git
-cd Modelo-de-Reconhecimento-de-Ameacas-por-Video
-```
-
-2. Crie e ative o ambiente virtual:
+1. Crie e ative o ambiente virtual:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Instale as dependências:
+2.  Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
@@ -35,9 +27,6 @@ pip install -r requirements.txt
 1. Ative o ambiente virtual (se ainda não estiver ativo):
 
 ```bash
-# Windows
-venv\Scripts\activate
-
 # Linux/Mac
 source venv/bin/activate
 ```
