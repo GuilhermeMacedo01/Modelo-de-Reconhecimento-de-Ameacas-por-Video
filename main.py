@@ -26,7 +26,7 @@ class DetectorApp:
         # Botão de detecção
         self.detect_button = ttk.Button(
             main_frame,
-            text="Iniciar Detecção por Webcam",
+            text="Iniciar Detecção",
             command=self.iniciar_deteccao,
             style="TButton"
         )
